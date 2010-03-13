@@ -1,0 +1,34 @@
+Easy Scrobbler
+
+PHP Last.fm Audioscrobbler client class.
+
+
+Features
+
+ * Get user profile
+ * 50 most played artists from a music profile
+ * 50 most played albums from a music profile
+ * 50 most played tracks from a music profile
+ * Most used tags by a music profile
+ * Friends added to profile
+ * People with similar taste to profile
+ * Recently played tracks for profile
+ * Most recent weekly artist chart
+ * Most recent weekly album chart
+ * Most recent weekly track chart
+ * Caching support
+
+
+Usage
+
+  require_once 'easy_scrobbler.class.php';
+
+  $scrobbler = new EasyScrobbler('myusername');
+
+  // get tracks array
+  $list = $scrobbler->getWeeklyTrackChart();
+
+  // just to see what is in array - dump :) You could do something more useful.
+  var_dump($list);
+
+© Laurynas Butkus (laurynas.butkus at gmail.com), 2006
